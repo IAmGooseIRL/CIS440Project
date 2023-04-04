@@ -3,6 +3,10 @@
 
 name: Build and deploy PHP app to Azure Web App - cis440project
 
+env:
+  AZURE_WEBAPP_NAME: cis440project   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.' 
+
 on:
   push:
     branches:
@@ -54,7 +58,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'cis440project'
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: .
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
