@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'cis440project'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_48A7FEF63B7C414286A3B3FEC521478D }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
