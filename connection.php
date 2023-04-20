@@ -26,30 +26,30 @@ class Database {
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }
         
-        if (mysqli_query($conn, '
-           CREATE TABLE `Employee` (
-            `First Name` VARCHAR(50) NOT NULL,
-            `Last Name` VARCHAR(50) NOT NULL,
-            `Date of Birth` DATE(10) NOT NULL,
-            `Gender` VARCHAR(50) NOT NULL,
-            `Address` VARCHAR(150) NOT NULL,
-            `City` VARCHAR(50) NOT NULL,
-            `State` VARCHAR(15) NOT NULL,
-            `Zip` VARCHAR(9) NOT NULL,
-            `Social Security` VARCHAR(9) NOT NULL,
-            `Medical` TEXT(500) NOT NULL,
-            `Home Phone` VARCHAR(20),
-            `Cell Phone` VARCHAR(20),
-            `Work Phone` VARCHAR(20),
-            `Email` VARCHAR(254) NOT NULL,
-            `Id` INT NOT NULL AUTO_INCREMENT
-            );
-            ')) {
-            printf("Table created\n");
-        }
+//         if (mysqli_query($conn, '
+//            CREATE TABLE `Employee` (
+//             `First Name` VARCHAR(50) NOT NULL,
+//             `Last Name` VARCHAR(50) NOT NULL,
+//             `Date of Birth` DATE(10) NOT NULL,
+//             `Gender` VARCHAR(50) NOT NULL,
+//             `Address` VARCHAR(150) NOT NULL,
+//             `City` VARCHAR(50) NOT NULL,
+//             `State` VARCHAR(15) NOT NULL,
+//             `Zip` VARCHAR(9) NOT NULL,
+//             `Social Security` VARCHAR(9) NOT NULL,
+//             `Medical` TEXT(500) NOT NULL,
+//             `Home Phone` VARCHAR(20),
+//             `Cell Phone` VARCHAR(20),
+//             `Work Phone` VARCHAR(20),
+//             `Email` VARCHAR(254) NOT NULL,
+//             `Id` INT NOT NULL AUTO_INCREMENT
+//             );
+//             ')) {
+//             printf("Table created\n");
+//         }
 
-        //Close the connection
-        mysqli_close($conn);
+//         //Close the connection
+//         mysqli_close($conn);
     }
 
 // $database = new Database();
