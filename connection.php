@@ -6,6 +6,8 @@ class Database {
     public $password 'Admin1234'; 
     public $db = 'cis440project'; 
     public $conn; 
+    
+    __construct($host, $user, $password, $db);
 
     function __construct($host, $user, $password, $db) {
         $this->host = $host;
