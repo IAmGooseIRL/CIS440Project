@@ -52,7 +52,7 @@ class Database {
         mysqli_close($conn);
     }
 
-$database = new Database();
+// $database = new Database();
 
 
 ?>
