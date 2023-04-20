@@ -51,7 +51,6 @@ class Database {
         //Close the connection
         mysqli_close($conn);
     }
-}
 
 $database = new Database();
 
